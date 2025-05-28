@@ -1,0 +1,38 @@
+.App {
+  padding: 20px;
+  font-family: sans-serif;
+  max-width: 800px;
+  margin: auto;
+}
+
+.tabs {
+  margin-bottom: 16px;
+}
+
+.tabs button {
+  margin-right: 8px;
+  padding: 8px 16px;
+  background: #eee;
+  border: none;
+  cursor: pointer;
+}
+
+.tabs button.active {
+  background: #333;
+  color: #fff;
+}
+
+.story-list {
+  list-style: none;
+  padding: 0;
+}
+
+.story-list li {
+  margin-bottom: 12px;
+}
+
+.story-list a {
+  font-weight: bold;
+  color: #0070f3;
+  text-decoration: none;
+}
