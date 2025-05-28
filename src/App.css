@@ -6,20 +6,27 @@
 }
 
 .tabs {
-  margin-bottom: 16px;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .tabs button {
   margin-right: 8px;
-  padding: 8px 16px;
-  background: #eee;
+  padding: 0.5rem 1rem;
+  background: none;
   border: none;
   cursor: pointer;
+  font-size: 1rem;
+  color: #5F6367
 }
 
 .tabs button.active {
-  background: #333;
-  color: #fff;
+  color: #000;
+}
+
+.tabs button:hover {
+  color: #000;
 }
 
 .story-list {

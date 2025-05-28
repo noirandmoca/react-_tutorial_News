@@ -14,6 +14,12 @@ const categoryMap = {
   best: 'beststories',
 } as const;
 
+const tabLabels = {
+  top: '今日のニュース',
+  new: '新しいニュース',
+  best: '人気のニュース'
+};
+
 type Category = keyof typeof categoryMap;
 
 export default function NewsApp() {
@@ -52,6 +58,8 @@ export default function NewsApp() {
   return (
     <div className="App">
       <h1>Hacker News</h1>
+      <h2>{tabLabels[activeTab]}</h2>
+
       <div className="tabs">
         {(['top', 'new', 'best'] as Category[]).map((key) => (
           <button
